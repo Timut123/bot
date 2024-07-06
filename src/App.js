@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer'; 
 import MiniPlay from './MiniPlay'
 import SystemUser from './SystemUser'
+import HomePage from './HomePage';
 
 function App() {
   const { tg } = useTelegram();
@@ -22,8 +23,7 @@ function App() {
         <Routes>
           <Route path="/miniplay" element={<MiniPlay />} />
           <Route path="/systemuser" element={<SystemUser />} />
-          <Route exact path="/">
-          </Route>
+          <Route path="/homepage" element={<HomePage/>} />  
         </Routes>
         <Footer /> 
       </div>
