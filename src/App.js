@@ -1,4 +1,4 @@
-
+/* eslint-disable */
 import './App.css';
 import { useEffect } from 'react';
 import { useTelegram } from './hooks/useTelegram';
@@ -20,11 +20,9 @@ function App() {
       <div className="App">
         <Header /> 
         <Routes>
-          <Route path="/miniplay" component={MiniPlay} />
-          <Route path="/systemuser" component={SystemUser} />
+          <Route path="/miniplay" element={<MiniPlay />} />
+          <Route path="/systemuser" element={<SystemUser />} />
           <Route exact path="/">
-            <h1>Главная страница</h1>
-            <p>Основной контент</p>
           </Route>
         </Routes>
         <Footer /> 
