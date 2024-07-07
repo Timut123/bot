@@ -9,6 +9,9 @@ import MiniPlay from './MiniPlay/MiniPlay'
 import SystemUser from './System/SystemUser'
 import HomePage from './home/HomePage';
 import Market from './market/Market';
+import Payments from './payment/Payments';
+import User from './user/User';
+import Exchanger from './exchange/Exchanger';
 
 function App() {
   const { tg } = useTelegram();
