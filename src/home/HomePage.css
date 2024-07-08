@@ -1,27 +1,21 @@
 .HomePage {
   text-align: center; /* Центрирование текста */
-  padding-top: 20px; /* Отступ сверху */
+  padding-top: 60px; /* Отступ сверху */
 }
 
-.HomePage-Icons {
+.HomePage-IconWrapper {
   display: flex;
-  justify-content: center;
-  margin-bottom: 20px; /* Отступ снизу между иконками и кнопками */
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Отступ снизу между иконкой и кнопкой */
 }
 
 .HomePage-Icon {
   font-size: 2rem; /* Размер иконок */
-  margin: 0 15px; /* Отступы между иконками */
+  margin-bottom: 10px; /* Отступ между иконкой и кнопкой */
 }
 
 .HomePage-Button {
-  display: flex;
-  justify-content: center; /* Выравнивание кнопок по центру */
-  margin-top: 20px; /* Отступ сверху для кнопок */
-}
-
-.HomePage-Button a {
-  margin: 0 10px; /* Отступы между ссылками */
   text-decoration: none; /* Убирает подчеркивание у ссылок */
   color: #000; /* Цвет текста ссылок */
   padding: 10px 20px; /* Внутренние отступы ссылок */
@@ -30,7 +24,6 @@
   transition: background-color 0.3s; /* Плавный переход цвета фона */
 }
 
-.HomePage-Button a:hover {
+.HomePage-Button:hover {
   background-color: #f0f0f0; /* Цвет фона при наведении */
 }
-
