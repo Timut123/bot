@@ -20,7 +20,7 @@
     margin: 0 20px; /* Увеличиваем горизонтальные отступы между ссылками */
     color: black; 
     text-decoration: none;
-    font-size: 50px; /* Размер текста ссылок */
+    font-size: 35px; /* Размер текста ссылок */
 }
 
 .footer .footer-links a:hover {
