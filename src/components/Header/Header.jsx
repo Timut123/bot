@@ -6,7 +6,7 @@ const Header = () => {
 
     return (
         <div className='header'>
-           <h1 className='text'>Welcome to telegram Wallet</h1>
+           <h1 className='text'>Welcome to Wallet</h1>
         </div>
     );
 };
