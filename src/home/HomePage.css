@@ -14,13 +14,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px; /* Отступ между кнопками */
+  margin-bottom: 10px; /* Уменьшенный отступ между кнопками */
 }
 
 .HomePage-Button {
   text-decoration: none; /* Убирает подчеркивание у ссылок */
   color: #000; /* Цвет текста ссылок */
-  padding: 10px 20px; /* Внутренние отступы ссылок */
+  padding: 8px 16px; /* Уменьшенные внутренние отступы кнопки */
   border: 1px solid #000; /* Рамка вокруг ссылок */
   border-radius: 5px; /* Закругленные углы рамки */
   transition: background-color 0.3s; /* Плавный переход цвета фона */
@@ -34,6 +34,6 @@
 }
 
 .HomePage-Icon {
-  font-size: 2rem; /* Размер иконок */
+  font-size: 1.5rem; /* Уменьшенный размер иконок */
   margin-bottom: 5px; /* Отступ между иконкой и текстом кнопки */
 }
