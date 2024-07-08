@@ -8,28 +8,28 @@ const HomePage = () => {
     <div className='HomePage'>
       <div className='HomePage-ButtonRow'>
         <div className='HomePage-ButtonWrapper'>
+          <BiShoppingBag className='HomePage-Icon' />
           <Link to='/payments' className='HomePage-Button'>
             Купить
           </Link>
-          <BiShoppingBag className='HomePage-Icon' />
         </div>
         <div className='HomePage-ButtonWrapper'>
+          <BiTransfer className='HomePage-Icon' />
           <Link to='/user' className='HomePage-Button'>
             Отправить
           </Link>
-          <BiTransfer className='HomePage-Icon' />
         </div>
         <div className='HomePage-ButtonWrapper'>
+          <BiUser className='HomePage-Icon' />
           <Link to='/market' className='HomePage-Button'>
             P2P Площадка
           </Link>
-          <BiUser className='HomePage-Icon' />
         </div>
         <div className='HomePage-ButtonWrapper'>
+          <BiTransferAlt className='HomePage-Icon' />
           <Link to='/exchanger' className='HomePage-Button'>
             Обменик
           </Link>
-          <BiTransferAlt className='HomePage-Icon' />
         </div>
       </div>
     </div>
