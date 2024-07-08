@@ -13,7 +13,7 @@
 }
 
 .footer .footer-links {
-    margin-bottom: 80px; /* Увеличиваем отступ между ссылками */
+    margin-bottom: 20px; /* Увеличиваем отступ между ссылками */
 }
 
 .footer .footer-links a {
@@ -22,6 +22,11 @@
     text-decoration: none;
     font-size: 35px; /* Размер текста ссылок */
 }
+
+.footer .footer-links a:not(:last-child) {
+    margin-right: 30px; /* Дополнительный отступ между ссылками, кроме последней */
+}
+
 
 .footer .footer-links a:hover {
     text-decoration: underline;
