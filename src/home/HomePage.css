@@ -1,18 +1,19 @@
 .HomePage {
   text-align: center; /* Центрирование текста */
-  padding-top: 60px; /* Отступ сверху */
+  padding-top: 20px; /* Отступ сверху */
 }
 
-.HomePage-IconWrapper {
+.HomePage-ButtonRow {
+  display: flex;
+  justify-content: space-around; /* Выравнивание кнопок по горизонтали с промежутками между ними */
+  flex-wrap: wrap; /* Перенос кнопок на новую строку, если не помещаются */
+  margin-bottom: 20px; /* Отступ снизу между строками кнопок */
+}
+
+.HomePage-ButtonWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px; /* Отступ снизу между иконкой и кнопкой */
-}
-
-.HomePage-Icon {
-  font-size: 2rem; /* Размер иконок */
-  margin-bottom: 10px; /* Отступ между иконкой и кнопкой */
 }
 
 .HomePage-Button {
@@ -26,4 +27,9 @@
 
 .HomePage-Button:hover {
   background-color: #f0f0f0; /* Цвет фона при наведении */
+}
+
+.HomePage-Icon {
+  font-size: 2rem; /* Размер иконок */
+  margin-top: 5px; /* Отступ между иконкой и кнопкой */
 }
