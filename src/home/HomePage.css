@@ -1,34 +1,35 @@
 .HomePage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .HomePage-Icons {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-bottom: 20px; /* регулируйте отступ ниже иконок */
-  }
-  
-  .HomePage-Icon {
-    font-size: 24px; /* размер иконок */
-  }
-  
-  .HomePage-Button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .HomePage-Button a {
-    margin: 10px;
-    font-size: 18px; /* размер шрифта ссылок */
-    text-decoration: none;
-    color: #000; /* цвет текста ссылок */
-  }
-  
-  .HomePage-Button a:hover {
-    color: #00f; /* цвет текста ссылок при наведении */
-  }
-  
+  text-align: center; /* Центрирование текста */
+  padding-top: 20px; /* Отступ сверху */
+}
+
+.HomePage-Icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Отступ снизу между иконками и кнопками */
+}
+
+.HomePage-Icon {
+  font-size: 2rem; /* Размер иконок */
+  margin: 0 15px; /* Отступы между иконками */
+}
+
+.HomePage-Button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HomePage-Button a {
+  margin: 10px 0; /* Отступы между ссылками */
+  text-decoration: none; /* Убирает подчеркивание у ссылок */
+  color: #000; /* Цвет текста ссылок */
+  padding: 10px 20px; /* Внутренние отступы ссылок */
+  border: 1px solid #000; /* Рамка вокруг ссылок */
+  border-radius: 5px; /* Закругленные углы рамки */
+  transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.HomePage-Button a:hover {
+  background-color: #f0f0f0; /* Цвет фона при наведении */
+}
