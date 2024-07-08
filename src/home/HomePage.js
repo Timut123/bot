@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BiShoppingBag, BiTransfer, BiUser, BiTransferAlt } from 'react-icons/bi';
-import './HomePage.css';
+import './HomePage.css'; // Подключение CSS файла
 
 const HomePage = () => {
   return (
