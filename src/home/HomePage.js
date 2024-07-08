@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BiShoppingBag, BiTransfer, BiUser, BiTransferAlt } from 'react-icons/bi'; // Пример иконок, можно выбрать подходящие
+import { BiShoppingBag, BiTransfer, BiUser, BiTransferAlt } from 'react-icons/bi';
+import './HomePage.css';
 
 const HomePage = () => {
   return (
