@@ -8,12 +8,15 @@
     color: white;
     background-color: #333; /* Добавляем цвет фона для header */
     border: none; /* Убираем возможные рамки у header */
+    box-shadow: none; /* Убираем возможную тень */
 }
-
-.text {
+h1.text {
     color: black;
     text-align: center;
     width: 100%; /* Задаем ширину */
     border: none; /* Убираем возможные рамки у текста */
     outline: none; /* Убираем возможный outline */
+    box-shadow: none; /* Убираем возможную тень */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем внутренние отступы по умолчанию */
 }
