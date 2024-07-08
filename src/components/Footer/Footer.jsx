@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="footer-links">
                     <Link to="/">Домой</Link>
                     <Link to="/miniplay">Мини игра</Link>
-                    <Link to="/systemuser">Реферальная система</Link>
+                    <Link to="/systemuser">друзья</Link>
                 </div>
             </div>
         </footer>
