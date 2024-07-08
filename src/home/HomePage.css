@@ -7,26 +7,27 @@
   display: flex;
   justify-content: space-around; /* Выравнивание кнопок по горизонтали с промежутками между ними */
   flex-wrap: wrap; /* Перенос кнопок на новую строку, если не помещаются */
-  margin-bottom: 20px; /* Отступ снизу между строками кнопок */
+  margin-bottom: 10px; /* Уменьшенный отступ снизу между строками кнопок */
 }
 
 .HomePage-ButtonWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px; /* Уменьшенный отступ между кнопками */
+  margin-bottom: 5px; /* Уменьшенный отступ между кнопками */
 }
 
 .HomePage-Button {
   text-decoration: none; /* Убирает подчеркивание у ссылок */
   color: #000; /* Цвет текста ссылок */
-  padding: 8px 16px; /* Уменьшенные внутренние отступы кнопки */
+  padding: 6px 12px; /* Уменьшенные внутренние отступы кнопки */
   border: 1px solid #000; /* Рамка вокруг ссылок */
-  border-radius: 5px; /* Закругленные углы рамки */
+  border-radius: 15px; /* Более округленные углы рамки */
   transition: background-color 0.3s; /* Плавный переход цвета фона */
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 0.875rem; /* Уменьшенный размер текста кнопки */
 }
 
 .HomePage-Button:hover {
@@ -34,6 +35,6 @@
 }
 
 .HomePage-Icon {
-  font-size: 1.5rem; /* Уменьшенный размер иконок */
-  margin-bottom: 5px; /* Отступ между иконкой и текстом кнопки */
+  font-size: 1.25rem; /* Уменьшенный размер иконок */
+  margin-bottom: 3px; /* Уменьшенный отступ между иконкой и текстом кнопки */
 }
