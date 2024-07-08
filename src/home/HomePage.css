@@ -16,12 +16,12 @@
 
 .HomePage-Button {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center; /* Выравнивание кнопок по центру */
+  margin-top: 20px; /* Отступ сверху для кнопок */
 }
 
 .HomePage-Button a {
-  margin: 10px 0; /* Отступы между ссылками */
+  margin: 0 10px; /* Отступы между ссылками */
   text-decoration: none; /* Убирает подчеркивание у ссылок */
   color: #000; /* Цвет текста ссылок */
   padding: 10px 20px; /* Внутренние отступы ссылок */
@@ -33,3 +33,4 @@
 .HomePage-Button a:hover {
   background-color: #f0f0f0; /* Цвет фона при наведении */
 }
+
