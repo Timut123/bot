@@ -26,6 +26,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/setting" element={<Setting />} />
           <Route path="/miniplay" element={<MiniPlay />} />
           <Route path="/systemuser" element={<SystemUser />} />
           <Route path="/exchanger" element={<Exchanger />} />

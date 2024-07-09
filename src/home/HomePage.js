@@ -1,11 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BiShoppingBag, BiTransfer, BiUser, BiTransferAlt } from 'react-icons/bi'; // Пример иконок, можно выбрать подходящие
-import './HomePage.css'; // Импорт CSS файла, где определены стили для HomePage компонента
+import { BiShoppingBag, BiTransfer, BiUser, BiTransferAlt } from 'react-icons/bi';
+import { FiSettings } from 'react-icons/fi'; // Иконка настроек
+import './HomePage.css'; // Импорт CSS файла
 
 const HomePage = () => {
   return (
     <div className='HomePage'>
+      <div className='HomePage-SettingsWrapper'>
+        <Link to='/settings' className='HomePage-SettingsButton'>
+          <FiSettings className='HomePage-Icon' />
+        </Link>
+      </div>
       <div className='HomePage-ButtonRow'>
         <div className='HomePage-ButtonWrapper'>
           <BiShoppingBag className='HomePage-Icon' />
@@ -28,13 +34,12 @@ const HomePage = () => {
         <div className='HomePage-ButtonWrapper'>
           <BiTransferAlt className='HomePage-Icon' />
           <Link to='/exchanger' className='HomePage-Button'>
-            Обменик
+            Обменник
           </Link>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default HomePage;
-

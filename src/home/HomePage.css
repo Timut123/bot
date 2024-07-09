@@ -1,6 +1,24 @@
 .HomePage {
   text-align: center; /* Центрирование текста */
   padding-top: 50px; /* Отступ сверху, чтобы была выше середины */
+  position: relative; /* Позиционирование для абсолютного позиционирования дочерних элементов */
+}
+
+.HomePage-SettingsWrapper {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 10px; /* Отступ сверху */
+  left: 10px; /* Отступ слева */
+}
+
+.HomePage-SettingsButton {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px; /* Размер иконки */
+  transition: color 0.2s;
+}
+
+.HomePage-SettingsButton:hover {
+  color: #007bff;
 }
 
 .HomePage-ButtonRow {
@@ -21,7 +39,7 @@
   text-decoration: none; /* Убирает подчеркивание у ссылок */
   color: #000; /* Цвет текста ссылок */
   padding: 6px 12px; /* Уменьшенные внутренние отступы кнопки */
-  border: 1px solid #000; /* Рамка вокруг ссылок */
+  border: none; /* Убирает рамку вокруг ссылок */
   border-radius: 15px; /* Более округленные углы рамки */
   transition: background-color 0.3s; /* Плавный переход цвета фона */
   display: flex;
@@ -38,3 +56,4 @@
   font-size: 1.25rem; /* Уменьшенный размер иконок */
   margin-bottom: 3px; /* Уменьшенный отступ между иконкой и текстом кнопки */
 }
+
