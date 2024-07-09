@@ -12,6 +12,7 @@ import Market from './market/Market';
 import Payments from './payment/Payments';
 import User from './user/User';
 import Exchanger from './exchange/Exchanger';
+import Setting from './setting/Setting';
 
 function App() {
   const { tg } = useTelegram();
