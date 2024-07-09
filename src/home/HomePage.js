@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BiShoppingBag, BiTransfer, BiUser, BiTransferAlt } from 'react-icons/bi';
-import { FiSettings } from 'react-icons/fi'; // Иконка настроек
-import './HomePage.css'; // Импорт CSS файла
+import { BiShoppingBag, BiTransfer, BiUser, BiTransferAlt, BiCog } from 'react-icons/bi';
+import './HomePage.css';
 
 const HomePage = () => {
   return (
     <div className='HomePage'>
       <div className='HomePage-SettingsWrapper'>
         <Link to='/setting' className='HomePage-SettingsButton'>
-          <FiSettings className='HomePage-Icon' />
+          <BiCog />
         </Link>
       </div>
       <div className='HomePage-ButtonRow'>
@@ -34,12 +33,12 @@ const HomePage = () => {
         <div className='HomePage-ButtonWrapper'>
           <BiTransferAlt className='HomePage-Icon' />
           <Link to='/exchanger' className='HomePage-Button'>
-            Обменник
+            Обменик
           </Link>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default HomePage;
