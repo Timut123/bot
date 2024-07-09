@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BiShoppingBag, BiTransfer, BiUser, BiTransferAlt, BiCog } from 'react-icons/bi';
+import { BiShoppingBag, BiTransfer, BiUser, BiTransferAlt, BiCog, BiQrScan } from 'react-icons/bi';
 import './HomePage.css';
 
 const HomePage = () => {
@@ -9,6 +9,11 @@ const HomePage = () => {
       <div className='HomePage-SettingsWrapper'>
         <Link to='/setting' className='HomePage-SettingsButton'>
           <BiCog />
+        </Link>
+      </div>
+      <div className='HomePage-QRWrapper'>
+        <Link to='/scanqr' className='HomePage-QRButton'>
+          <BiQrScan />
         </Link>
       </div>
       <div className='HomePage-ButtonRow'>
