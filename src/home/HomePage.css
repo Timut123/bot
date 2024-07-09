@@ -10,6 +10,12 @@
   left: 10px; /* Отступ слева */
 }
 
+.HomePage-QRWrapper {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 10px; /* Отступ сверху */
+  right: 10px; /* Отступ справа */
+}
+
 .HomePage-SettingsButton,
 .HomePage-QRButton {
   text-decoration: none;
@@ -23,28 +29,23 @@
   color: #007bff;
 }
 
-.HomePage-QRWrapper {
-  position: absolute; /* Абсолютное позиционирование */
-  top: 10px; /* Отступ сверху */
-  right: 10px; /* Отступ справа */
-}
-
 .HomePage-ButtonRow {
   display: flex;
   flex-wrap: wrap; /* Перенос кнопок на новую строку, если не помещаются */
+  justify-content: center; /* Выравнивание кнопок по центру */
   gap: 8px; /* Промежуток между кнопками */
   margin-bottom: 10px; /* Уменьшенный отступ снизу между строками кнопок */
 }
 
 .HomePage-ButtonWrapper {
-  flex: 1 0 50%; /* Каждая кнопка занимает половину ширины на мобильных устройствах */
+  flex: 1 0 100%; /* Каждая кнопка занимает 100% ширины на мобильных устройствах */
   max-width: 120px; /* Максимальная ширина кнопок */
   margin-bottom: 10px; /* Отступ между кнопками */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .HomePage-ButtonWrapper {
-    flex: 1 0 25%; /* Ширина кнопок на планшетах и больших экранах */
+    flex: 1 0 45%; /* Каждая кнопка занимает 45% ширины на планшетах и больших экранах */
   }
 }
 
