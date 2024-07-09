@@ -1,6 +1,6 @@
 .HomePage {
   text-align: center; /* Центрирование текста */
-  padding-top: 50px; /* Отступ сверху, чтобы была выше середины */
+  padding-top: 75px; /* Отступ сверху, чтобы была выше середины */
   position: relative; /* Позиционирование для абсолютного позиционирования дочерних элементов */
 }
 
@@ -31,38 +31,35 @@
 
 .HomePage-ButtonRow {
   display: flex;
-  justify-content: space-around; /* Выравнивание кнопок по горизонтали с промежутками между ними */
   flex-wrap: wrap; /* Перенос кнопок на новую строку, если не помещаются */
   gap: 8px; /* Промежуток между кнопками */
   margin-bottom: 10px; /* Уменьшенный отступ снизу между строками кнопок */
 }
 
 .HomePage-ButtonWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%; /* Используем всю ширину на мобильных устройствах */
+  flex: 1 0 50%; /* Каждая кнопка занимает половину ширины на мобильных устройствах */
   max-width: 120px; /* Максимальная ширина кнопок */
   margin-bottom: 10px; /* Отступ между кнопками */
 }
 
 @media (min-width: 768px) {
   .HomePage-ButtonWrapper {
-    width: 25%; /* Ширина кнопок на планшетах и больших экранах */
+    flex: 1 0 25%; /* Ширина кнопок на планшетах и больших экранах */
   }
 }
 
 .HomePage-Button {
   text-decoration: none; /* Убирает подчеркивание у ссылок */
   color: #000; /* Цвет текста ссылок */
-  padding: 4px 8px; /* Уменьшенные внутренние отступы кнопки */
+  padding: 8px; /* Уменьшенные внутренние отступы кнопки */
   border: none; /* Убирает рамку вокруг ссылок */
   border-radius: 10px; /* Более округленные углы рамки */
   transition: background-color 0.3s; /* Плавный переход цвета фона */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center; /* Выравнивание текста по центру */
+  align-items: center; /* Выравнивание элементов по центру */
   font-size: 0.875rem; /* Уменьшенный размер текста кнопки */
+  width: 100%; /* Ширина кнопки занимает всю доступную ширину */
 }
 
 .HomePage-Button:hover {
@@ -70,6 +67,7 @@
 }
 
 .HomePage-Icon {
-  font-size: 1rem; /* Уменьшенный размер иконок */
-  margin-bottom: 2px; /* Уменьшенный отступ между иконкой и текстом кнопки */
+  font-size: 1.5rem; /* Увеличенный размер иконок */
+  margin-bottom: 4px; /* Уменьшенный отступ между иконкой и текстом кнопки */
 }
+
