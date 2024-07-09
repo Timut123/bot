@@ -7,7 +7,7 @@
 .HomePage-SettingsWrapper {
   position: absolute; /* Абсолютное позиционирование */
   top: 10px; /* Отступ сверху */
-  right: 10px; /* Отступ справа */
+  left: 10px; /* Отступ слева */
 }
 
 .HomePage-SettingsButton,
@@ -21,6 +21,12 @@
 .HomePage-SettingsButton:hover,
 .HomePage-QRButton:hover {
   color: #007bff;
+}
+
+.HomePage-QRWrapper {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 10px; /* Отступ сверху */
+  right: 10px; /* Отступ справа */
 }
 
 .HomePage-ButtonRow {
