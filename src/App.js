@@ -13,6 +13,7 @@ import Payments from './payment/Payments';
 import User from './user/User';
 import Exchanger from './exchange/Exchanger';
 import Setting from './setting/Setting';
+import QRCode from './qrcode/QRCode';
 
 function App() {
   const { tg } = useTelegram();
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/setting" element={<Setting />} />
+          <Route path="/qrcode" element={<QRCode/>} />
           <Route path="/miniplay" element={<MiniPlay />} />
           <Route path="/systemuser" element={<SystemUser />} />
           <Route path="/exchanger" element={<Exchanger />} />

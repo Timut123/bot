@@ -12,7 +12,7 @@ const HomePage = () => {
         </Link>
       </div>
       <div className='HomePage-QRWrapper'>
-        <Link to='/scanqr' className='HomePage-QRButton'>
+        <Link to='/qrcode' className='HomePage-QRButton'>
           <BiQrScan />
         </Link>
       </div>
