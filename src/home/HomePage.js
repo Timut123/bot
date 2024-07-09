@@ -27,7 +27,7 @@ const HomePage = () => {
         <div className='HomePage-ButtonWrapper'>
           <BiUser className='HomePage-Icon' />
           <Link to='/market' className='HomePage-Button'>
-            P2P Площадка
+            P2P
           </Link>
         </div>
         <div className='HomePage-ButtonWrapper'>
