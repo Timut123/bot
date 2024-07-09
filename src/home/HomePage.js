@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <div className='HomePage'>
       <div className='HomePage-SettingsWrapper'>
-        <Link to='/settings' className='HomePage-SettingsButton'>
+        <Link to='/setting' className='HomePage-SettingsButton'>
           <FiSettings className='HomePage-Icon' />
         </Link>
       </div>
