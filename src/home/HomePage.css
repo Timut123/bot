@@ -10,30 +10,15 @@
   right: 10px; /* Отступ справа */
 }
 
-.HomePage-SettingsButton {
-  text-decoration: none;
-  color: #000;
-  font-size: 20px; /* Размер иконки настроек */
-  transition: color 0.2s;
-}
-
-.HomePage-SettingsButton:hover {
-  color: #007bff;
-}
-
-.HomePage-QRWrapper {
-  position: absolute; /* Абсолютное позиционирование */
-  top: 10px; /* Отступ сверху */
-  right: 10px; /* Отступ справа */
-}
-
+.HomePage-SettingsButton,
 .HomePage-QRButton {
   text-decoration: none;
   color: #000;
-  font-size: 20px; /* Размер иконки сканирования QR */
+  font-size: 20px; /* Размер иконки */
   transition: color 0.2s;
 }
 
+.HomePage-SettingsButton:hover,
 .HomePage-QRButton:hover {
   color: #007bff;
 }
@@ -50,9 +35,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%; /* Ширина кнопок в зависимости от количества кнопок в строке */
+  width: 100%; /* Используем всю ширину на мобильных устройствах */
   max-width: 120px; /* Максимальная ширина кнопок */
-  margin-bottom: 5px; /* Уменьшенный отступ между кнопками */
+  margin-bottom: 10px; /* Отступ между кнопками */
+}
+
+@media (min-width: 768px) {
+  .HomePage-ButtonWrapper {
+    width: 25%; /* Ширина кнопок на планшетах и больших экранах */
+  }
 }
 
 .HomePage-Button {
@@ -76,4 +67,3 @@
   font-size: 1rem; /* Уменьшенный размер иконок */
   margin-bottom: 2px; /* Уменьшенный отступ между иконкой и текстом кнопки */
 }
-
