@@ -13,7 +13,7 @@
 .HomePage-SettingsButton {
   text-decoration: none;
   color: #000;
-  font-size: 18px; /* Уменьшенный размер иконки */
+  font-size: 20px; /* Размер иконки настроек */
   transition: color 0.2s;
 }
 
@@ -25,12 +25,17 @@
   display: flex;
   justify-content: space-around; /* Выравнивание кнопок по горизонтали с промежутками между ними */
   flex-wrap: wrap; /* Перенос кнопок на новую строку, если не помещаются */
+  gap: 8px; /* Промежуток между кнопками */
+  margin-bottom: 10px; /* Уменьшенный отступ снизу между строками кнопок */
 }
 
 .HomePage-ButtonWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 25%; /* Ширина кнопок в зависимости от количества кнопок в строке */
+  max-width: 120px; /* Максимальная ширина кнопок */
+  margin-bottom: 5px; /* Уменьшенный отступ между кнопками */
 }
 
 .HomePage-Button {
@@ -54,4 +59,3 @@
   font-size: 1rem; /* Уменьшенный размер иконок */
   margin-bottom: 2px; /* Уменьшенный отступ между иконкой и текстом кнопки */
 }
-
